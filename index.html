@@ -1,0 +1,224 @@
+<?php
+session_start();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scadabox | Real-Time Solar Plant Monitoring System</title>
+
+  <meta name="description" content="ScadaBox enables real-time monitoring and data analytics for solar power plants. Track performance, efficiency, and system health remotely." />
+  <meta name="keywords" content="ScadaBox, Solar Monitoring, Real-Time Solar Plant Monitoring, Solar Power Analytics, Renewable Energy, Solar Data Logger, SCADA system" />
+  <meta name="author" content="ScadaBox Team" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome (correct link) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <img src="img/logo.png" alt="Logo" class="logo">
+    <div>
+      <a href="#features" class="btn">View Features</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+  <div class="hero-content" data-aos="fade-right" data-aos-duration="1200">
+    <h1 data-aos="fade-up" data-aos-delay="200">Track Your Solar Power</h1>
+    <p data-aos="fade-up" data-aos-delay="400">
+      Track your solar energy in real-time and get helpful insights to improve performance.
+    </p>
+    <a href="#contact" class="btn" data-aos="zoom-in" data-aos-delay="600">Get Started</a>
+  </div>
+
+  <div class="hero-image-group">
+    <img src="img/device.png" alt="device" class="image-1" />
+    <img src="img/laptop.png" alt="laptop" class="image-2" />
+    <img src="img/tab.png" alt="tab" class="image-3" />
+
+  </div>
+</section>
+
+
+
+
+  <section class="dashboard-display">
+    <div class="section-title" data-aos="fade-right" data-aos-duration="1200">
+      Real-time Monitoring and Detailed Analytics Dashboard View
+    </div>
+
+    <div class="device mobile" data-aos="fade-up" data-aos-delay="300">
+      <img src="img/mobile.png" alt="Mobile View">
+    </div>
+
+    <div class="device laptop" data-aos="zoom-in" data-aos-delay="600">
+      <img src="img/laptop.png" alt="Laptop View">
+    </div>
+
+    <div class="device tablet" data-aos="fade-left" data-aos-delay="900">
+      <img src="img/tab.png" alt="Tablet View">
+    </div>
+  </section>
+
+  <section class="features-section" id="features">
+    <div class="section-header">
+      <h2 data-aos="fade-up">Smart Monitoring Made Easy</h2>
+      <p data-aos="fade-up" data-aos-delay="200">
+        Everything you need to watch and manage your solar system, all in one place.
+      </p>
+    </div>
+    <div class="card-container">
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon">
+          <i class="fas fa-solar-panel"></i>
+        </div>
+        <h3>Live Tracking</h3>
+        <p>See how much energy your solar panels are making in real time, anytime, anywhere.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon">
+          <i class="fas fa-bell"></i>
+        </div>
+        <h3>Quick Alerts</h3>
+        <p>We’ll notify you right away if something goes wrong or needs attention.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon">
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <h3>Easy Reports</h3>
+        <p>Understand trends and performance with simple charts and insights.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="icon">
+          <i class="fas fa-cloud-sun"></i>
+        </div>
+        <h3>Weather Insights</h3>
+        <p>See how weather affects your energy production and plan accordingly.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>Access Anywhere</h3>
+        <p>Check your solar system from your phone with our easy-to-use app.</p>
+      </div>
+      <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+        <div class="icon">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <h3>Energy Predictions</h3>
+        <p>Get forecasts of how much energy your system might produce next.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="image-container">
+      <!-- First Image Card -->
+      <div class="image-card">
+        <div data-aos="fade-left" class="image-wrapper">
+          <img src="img/1.png" alt="Real-time monitoring">
+        </div>
+        <div class="image-description">
+          <p data-aos="fade-up">
+            Reduce manual work by up to <strong>40%</strong> with
+            <strong>real-time monitoring</strong>. Stay updated on your solar system's performance,
+            detect issues early, and make quick decisions with powerful <strong>data analysis</strong>.
+          </p>
+        </div>
+      </div>
+
+      <!-- Second Image Card -->
+      <div class="image-card">
+        <div data-aos="fade-right" class="image-wrapper">
+          <img src="img/2.png" alt="Performance comparison">
+        </div>
+        <div class="image-description">
+          <p data-aos="fade-up">
+            Save up to <strong>15%</strong> on energy loss by using
+            <strong>performance comparison tools</strong>. Easily spot under performing / non-performing  parts of your system and take action with smart <strong>pattern analysis</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" class="footer">
+    <div class="footer-left">
+      <h2 class="footer-title">Contact Us</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope contact-icon"></i>
+          <span>info@exceliot.com</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone contact-icon"></i>
+          <span>+91 8511550082</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt contact-icon"></i>
+          <span>515, North Plaza, Nr. 4D Square Mall, Motera, Ahmedabad, Gujarat-380005</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-right">
+      <h3 class="form-title">Get Free Trial</h3>
+      <form class="trial-form" action="feedback.php" method="POST">
+        <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+        <input type="email" name="email" class="form-input" placeholder="Email" required>
+        <input type="tel" name="mobile" class="form-input" placeholder="Mobile Number" required>
+        <input type="text" name="organization" class="form-input" placeholder="Organization Name">
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+      <div id="toast" class="toast"></div>
+    </div>
+
+  </footer>
+
+
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-quad',
+      once: true
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script>
+    <?php if (isset($_SESSION['message'])): ?>
+      Toastify({
+        text: "<?php echo $_SESSION['message']; ?>",
+        duration: 3000,
+        gravity: "bottom",
+        position: "right",
+        backgroundColor: "<?php echo $_SESSION['message_type'] == 'success' ? '#28a745' : '#dc3545'; ?>",
+
+      }).showToast();
+      <?php unset($_SESSION['message'], $_SESSION['message_type']); ?>
+    <?php endif; ?>
+  </script>
+
+</body>
+
+</html>
